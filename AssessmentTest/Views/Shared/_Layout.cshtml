@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assessment Test</title>
+
+    <link href="~/Scripts/alertify.min.css" rel="stylesheet" />
+    <link href="~/Scripts/jquery.loadingModal.css" rel="stylesheet" />
+    <link href="~/Scripts/MPagecss.css" rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x- ng-cloak {
+            display: none !important;
+        }
+
+        .hovercursor:hover {
+            cursor: pointer;
+        }
+
+        .pagination > li.active > a {
+            background: #3ecdf5;
+            color: #fff;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        .facolor {
+            color: #ed3030
+        }
+    </style>
+
+</head>
+<body ng-app="MyApp" ng-cloak>
+   
+    <div class="container body-content">
+        <br />
+        <br />
+        @RenderBody()
+        <hr />
+        <footer>
+            @*<p>&copy; @DateTime.Now.Year</p>*@
+        </footer>
+    </div>
+
+
+    
+
+
+
+
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/Angular/AngularModule.js?v01"></script>
+    <script src="~/Scripts/Angular/AngularController.js?v01"></script>
+    <script src="~/Scripts/Angular/AngularService.js?v01"></script>
+
+    <script src="~/Scripts/alertify.min.js"></script>
+    <script src="~/Scripts/jquery.loadingModal.min.js"></script>
+    <script src="~/Scripts/dirPagination.js"></script>
+</body>
+</html>
+
+<script>
+    function showModal() { $('body').loadingModal({ position: 'auto', text: 'Please wait......', color: '#fff', opacity: '0.6', backgroundColor: 'rgb(0,0,0)', animation: 'threeBounce' }); }
+</script>
